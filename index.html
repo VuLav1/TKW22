@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="thongbao">
+        <img src="./header.png" alt="">
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./phandau.png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Bạn tìm gì...">
+            <button><i class="fas fa-search"></i>Tìm kiếm</button>
+        </div>
+        <div class="login">
+            <i class="fas fa-user"></i>
+            <p>Đăng nhập/Đăng kí</p>
+            <span><b>Tài khoản</b></span>
+            <i class="fas fa-sort-down"></i>
+            <div class="bangdn">
+                <p style="background-color: yellow; color: black;">Đăng nhập</p>
+                <p style="background-color: yellow; color: black;">Tạo tài khoản</p>
+                <p style="background-color: rgb(46, 46, 226); color: white;">Đăng nhập bằng facebook</p>
+                <p style="background-color: rgb(237, 54, 54); color: white;">Đăng nhập bằng google</p>
+            </div>
+        </div>
+        <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p><b>Giỏ hàng</b></p>
+        </div>
+    </header>
+    <div class="body">
+        <div class="noidung">
+            <div class="noidungtrai" class="row">
+                <ul>               
+                    <li class="chuan">
+                        <i class="fas fa-th"></i> DANH MỤC SẢN PHẨM
+                    </li> 
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" id="linhkien">
+                        <i style="margin-right: 10px;" class="fas fa-microchip"></i><span>Linh kiện mới</span>
+                        <div class="noidung-item1">
+                            <div class="nd-itemtren">                  
+                                <div class="nd-item1">
+                                    <span>CPU-Bộ vi xử lí</span>
+                                    <p>Intel thế hệ 13(mới)</p>
+                                    <p>Intel thế hệ 12</p>
+                                    <p>Intelthế hệ l1</p>
+                                    <p>Intel thế hệ 10</p>
+                                    <p>AMD 7000 Series</p>
+                                    <p>AMD 5000 Series</p>
+                                    <p>AMD 4000 Series</p>
+                                    <p>AMD 3000 Series</p>
+                                    <p>CPU tray - No box</p>
+                                    <p>CPU INTEL</p>
+                                    <p>CPU AMD</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>Mainboard - Bo mạch chủ</span>
+                                    <p>Mainboard Intel</p>
+                                    <p>Mainboard AMD</p>
+                                    <p>Mainboard theo hãng</p>
+                                    <p>Mainboard thep socket</p>
+                                    <p>Mainboard theo kích thước</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>SSD - HDD</span>
+                                    <p>SSD 120 - 128G</p>
+                                    <p>SSD 240 - 256G</p>
+                                    <p>SSD 480 - 512G</p>
+                                    <p>M.2 NVMe Gen3</p>
+                                    <p>M.2 NVMe Gen4</p>
+                                    <p>Ổ cứng theo hãng</p>
+                                    <p>HDD 1TB - 2TB - 4TB</p>
+                                    <p>HDD từ 4TB trở lên</p>
+                                    <p>HDD chuyên dụng cho camera</p>
+                                    <p>Phụ kiện SSD</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>Case - Thùng máy</span>
+                                    <p>Case dưới 1 triệu</p>
+                                    <p>Case 500K - 1 triệu</p>
+                                    <p>Case 1 Triệu - 2 Triệu</p>
+                                    <p>Case Trên 2 Triệu</p>
+                                    <p>Case theo hãng</p>
+                                    <p>Fan Case</p>
+                                    <p>Case Mini ITX</p>
+                                    <p>Case Micro ATX</p>
+                                    <p>ATX Mix Tower</p>
+                                    <p>ATX Full Tower</p>
+                                    <p>ATX Super Tower</p>
+                                </div>
+                            </div>
+                            <div class="nd-itemduoi">
+                                <div class="nd-item1">
+                                    <span>PSU - Nguồn máy tính</span>
+                                    <p>Nguồn theo hãng</p>
+                                    <p>Nguồn 400W đến 550W</p>
+                                    <p>Nguồn 550W đến 650W</p>
+                                    <p>Nguồn 650W đến 800W</p>
+                                    <p>Nguồn 800W đến 1000W</p>
+                                    <p>Nguồn trên 1000W</p>
+                                    <p>Nguồn 80 Plus Bronze</p>
+                                    <p>Nguồn 80 Plus Gold</p>
+                                    <p>Nguồn 80 Plus Platinum</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>Bộ nhớ Ram</span>
+                                    <p>Ram DDR5</p>
+                                    <p>Ram DDR4 8GB</p>
+                                    <p>Ram DDR4 16GB - 32GB</p>
+                                    <p>Ram LED RGB</p>
+                                    <p>Ram theo hãng</p>
+                                    <p>Ram theo dung lượng</p>
+                                    <p>Ram theo bus</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>VGA - Card màn hình</span>
+                                    <p>VGA NVIDIA GeForce</p>
+                                    <p>VGA AMD</p>
+                                    <p>VGA NVIDIA Quadro</p>
+                                    <p>Mainboard thep socket</p>
+                                    <p>VGA theo hãng</p>
+                                </div>
+                                <div class="nd-item1">
+                                    <span>Tản nhiệt - Fan RGB</span>
+                                    <p>Tản nhiệt khí</p>
+                                    <p>Tản AIO 240</p>
+                                    <p>Tản AIO 280</p>
+                                    <p>Tản AIO 360</p>
+                                    <p>Fan LED RGB</p>
+                                    <p>Keo tản nhiệt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" id="linhkiencu">
+                        <i style="margin-right: 10px;" class="fas fa-server"></i>Linh kiện cũ
+                        <div class="noidung-item-2">
+                            <div class="nd-itemtren2">
+                                <div class="nd-item2">
+                                    <span>CPU-Bộ vi xử lí</span>
+                                    <p>CPU INTEL tray - cũ</p>
+                                    <p>CPU AMD tray - cũ</p>
+                                </div>
+                                <div class="nd-item2">
+                                    <span>Mainboard - Bo mạch chủ</span>
+                                    <p>Mainboard Intel cũ</p>
+                                    <p>Mainboard AMD cũ</p>
+                                    <p>Mainboard dòng B cũ</p>
+                                    <p>Mainboard dòng H cũ</p>
+                                    <p>Mainboard dòng Z cũ</p>
+                                </div>
+                                <div class="nd-item2">
+                                    <span>Bộ nhớ Ram</span>
+                                    <p>Ram Laptop cũ</p>
+                                    <p>Ram DDR3</p>
+                                    <p>Ram DDR4</p>                              
+                                </div>
+                                <div class="nd-item2">
+                                    <span>VGA</span>
+                                    <p>VGA NVIDIA</p>
+                                    <p>VGA AMD</p>
+                                </div>                           
+                            </div>
+                            <div class="nd-itemduoi2">
+                                <div class="nd-item2">
+                                    <span>PSU - Nguồn máy tính</span>
+                                    <p>Nguồn 400W đến 550W cũ</p>
+                                    <p>Nguồn 550W đến 650W cũ</p>
+                                    <p>Nguồn 650W đến 800W cũ</p>
+                                    <p>Nguồn 800W đến 1000W cũ</p>
+                                    <p>Nguồn trên 1000W cũ</p>
+                                </div>
+                                <div class="nd-item2">
+                                    <span>Laptop và linh kiện khác</span>
+                                </div>
+                                <div class="nd-item2">
+                                    <span>LCD màn hình</span>
+                                    <p>AOC</p>
+                                    <p>Dell</p>
+                                    <p>Samsung</p>
+                                </div>
+                                <div class="nd-item2"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" id="laptop"><i style="margin-right: 10px;" class="fas fa-laptop"></i>Laptop chính hãng
+                        <div class="noidung-item-3">
+                            <div class="nd-itemtren3">
+                                <div class="nd-item3">
+                                    <span>Laptop theo hãng</span>
+                                    <p>Laptop Asus</p>
+                                    <p>Laptop Acer</p>
+                                    <p>Laptop Avita</p>
+                                    <p>Laptop Dell</p>
+                                    <p>Laptop HP</p>
+                                    <p>Laptop MSI</p>
+                                    <p>Laptop Huawei</p>
+                                    <p>Laptop Gigabyte</p>
+                                    <p>Laptop Lenovo</p>
+                                    <p>Laptop Intel</p>
+                                    <p>Laptop XPG</p>
+                                    <p>Laptop Fujitsu</p>
+                                </div>
+                                <div class="nd-item3">
+                                    <span>Laptop theo nhu cầu</span>
+                                    <p>Laptop Gaming</p>
+                                    <p>Laptop Văn phòng</p>
+                                </div>
+                                <div class="nd-item3">
+                                    <span>Laptop theo CPU</span>
+                                    <p>Laptop CPU Intel</p>
+                                    <p>Laptop CPU AMD</p>
+                                </div>
+                                <div class="nd-item3">
+                                    <span>Laptop theo VGA</span>
+                                    <p>Laptop VGA Onboard</p>
+                                    <p>Laptop VGA Nvidia</p>
+                                    <p>Laptop GTX 1650/1650ti</p>
+                                    <p>Laptop GTX1 660</p>
+                                    <p>Laptop RTX 3050/3050ti</p>
+                                    <p>Laptop RTX 3060</p>
+                                    <p>Laptop RTX 3070/3070ti</p>
+                                    <p>Laptop RTX 3080/3080ti</p>
+                                    <p>Laptop VGA AMD</p>
+                                </div>
+                            </div>
+                            <div class="nd-itemduoi3">
+                                <div class="nd-item3">
+                                    <span>Laptop theo Ram</span>
+                                    <p>Laptop Ram 4GB</p>
+                                    <p>Laptop Ram 8GB</p>
+                                    <p>Laptop Ram 16GB</p>
+                                    <p>Laptop Ram 32GB</p>
+                                    <p>Laptop Ram trên 32GB</p>
+                                </div>
+                                <div class="nd-item3">
+                                    <span>Laptop theo ổ cứng</span>
+                                    <p>Chỉ có HDD</p>
+                                    <p>Chỉ có SSD</p>
+                                    <p>SSD và HDD</p>
+                                </div>
+                                <div class="nd-item3">
+                                    <span>Laptop hàng trưng bày</span>
+                                </div>
+                                <div class="nd-item3">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-desktop"></i>PC Gaming, Đồ họa, Audio
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Cấu hình Grandma Shark</span>
+                                    <p>Grandma 3090Ti i9</p>
+                                    <p>Grandma 3090 i9</p>
+                                    <p>Grandma 3070Ti i9</p>
+                                    <p>Grandma 3070Ti R9</p>
+                                    <p>Grandma 3060 i7 13700K</p>
+                                    <p>Grandma 3060Ti i5 13600K</p>
+                                    <p>Grandma 4090 i9 13900KF</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Cấu hình Mommy Shark</span>
+                                    <p>Mommy 3080 i7</p>
+                                    <p>Mommy 3070Ti i7</p>
+                                    <p>Mommy 3060Ti i7</p>
+                                    <p>Mommy 3060Ti R7</p>
+                                    <p>Mommy 3060 i7</p>
+                                    <p>Mommy 6700XT i7</p>
+                                    <p>Mommy Pro R7</p>
+                                    <p>Mommy 13700KF 4080</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Cấu hình Daddy Shark</span>
+                                    <p>Daddy 3060Ti i5</p>
+                                    <p>Daddy 3060 i5</p>
+                                    <p>Daddy 3060 i5 (2nd)</p>
+                                    <p>Daddy 3050 i5</p>
+                                    <p>Daddy 2060 i5</p>
+                                    <p>DaddyDaddy 1660s i5</p>
+                                    <p>Daddy 6600XT i5</p>
+                                    <p>Daddy 6600 R5 3600</p>
+                                    <p>Daddy 3060 i5 12400K</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Cấu hình Chicken</span>
+                                    <p>Chicken 3050</p>
+                                    <p>Chicken 1660S</p>
+                                    <p>Chicken 1650</p>
+                                    <p>Chicken 1650 White</p>
+                                    <p>Chicken 1030</p>
+                                    <p>Chicken RYZEN 4350G</p>
+                                    <p>Chicken RYZEN 4650G</p>
+                                    <p>Chicken RYZEN 3600</p>
+                                </div>
+                            </div> 
+                            <div class="nd-itemduoi4">
+                                <div class="nd-item4">
+                                    <span>PC đồ họa 2D</span>
+                                    <p>Designer i9 - 64GB</p>
+                                    <p>Designer i7 - 64GB</p>
+                                    <p>Designer i5 6500XT</p>
+                                    <p>Designer 5800X 6600XT</p>
+                                    <p>Designer i7 3060</p>
+                                    <p>Designer i7 3070Ti</p>
+                                    <p>Designer 5800XT 3070Ti</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>PC NOX - Giả lập</span>
+                                    <p>NOX 01</p>
+                                    <p>NOX 02</p>
+                                    <p>NOX X99 2683</p>
+                                    <p>NOX X99 2680</p>
+                                    <p>NOX X99 2670</p>
+                                    <p>NOX X79M 2689</p>
+                                    <p>NOX X79 2689</p>
+                                    <p>NOX RTX 2060</p>
+                                    <p>NOX E5 2689</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>PC đồ họa 3D - AutoCAD - Render</span>
+                                    <p>3D i9 - A2000</p>
+                                    <p>3D i7 - T1000</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>PC Server</span>
+                                    <p>PC Server 01</p>
+                                    <p>PC Server 02</p>
+                                    <p>PC Server 03</p>
+                                    <p>PC Server 04</p>
+                                    <p>PC Server 05</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-desktop"></i>PC Văn phòng, mini, Aio
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>PC theo hãng</span>
+                                    <p>Máy bộ Lenovo</p>
+                                    <p>Máy bộ Asus</p>
+                                    <p>Máy bộ MSI</p>
+                                    <p>Máy bộ Zotac</p>
+                                    <p>Máy bộ HP</p>
+                                    <p>Máy bộ Dell</p>
+                                    <p>Máy bộ Intel</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>PC theo nhu cầu</span>
+                                    <p>Văn phòng</p>
+                                    <p>Máy bộ</p>
+                                    <p>Máy bộ mini</p>
+                                    <p>AIO PC</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>PC theo Ram</span>
+                                    <p>Ram 4GB</p>
+                                    <p>Ram 8GB</p>
+                                    <p>Ram 16GB</p>
+                                    <p>Ram 32GB</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Máy bộ mini</span>
+                                    <p>Máy bộ Lenovo</p>
+                                    <p>Máy bộ Asus</p>
+                                    <p>Máy bộ MSI</p>
+                            </div>                        
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-tv"></i>Màn hình máy tính
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Màn hình theo hãng</span>
+                                    <p>Màn hình Dell</p>
+                                    <p>Màn hình HP</p>
+                                    <p>Màn hình Samsung</p>
+                                    <p>GMàn hình LG</p>
+                                    <p>Màn hình Philips</p>
+                                    <p>Màn hình ViewSonic</p>
+                                    <p>Màn hình HKC</p>
+                                    <p>Màn hình Acer</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Màn hình theo hãng</span>
+                                    <p>Màn hình AOC</p>
+                                    <p>Màn hình Gigabyte</p>
+                                    <p>Màn hình Asus</p>
+                                    <p>Màn hình MSI</p>
+                                    <p>Màn hình VSP</p>
+                                    <p>Màn hình Dahua</p>
+                                    <p>Màn hình LC Power</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Kích thước</span>
+                                    <p>Màn hình 19 inch</p>
+                                    <p>Màn hình 20 inch</p>
+                                    <p>Màn hình 22 inch</p>
+                                    <p>Màn hình 24 inch</p>
+                                    <p>Màn hình 25 inch</p>
+                                    <p>Màn hình 27 inch phẳng</p>
+                                    <p>Màn hình 27 inch cong</p>
+                                    <p>Màn hình 32 inch</p>
+                                    <p>Màn hình 34 inch</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Dộ phân giải - Tần số quét</span>
+                                    <p>Full HD (1920x1080)</p>
+                                    <p>QHD 2K(2560x1440)</p>
+                                    <p>UHD 4K (3840x2160)</p>
+                                    <p>Tần số quét 60Hz - 75Hz</p>
+                                    <p>Tần số quét 144Hz - 165Hz</p>
+                                    <p>Tần số quét 240Hz - 360Hz</p>
+                                </div>
+                            </div> 
+                            <div class="nd-itemduoi4">
+                                <div class="nd-item4">
+                                    <span>Màn hình theo giá tiền</span>
+                                    <p>Dưới 2 triệu</p>
+                                    <p>Từ 2 triệu - 4 triệu</p>
+                                    <p>Từ 4 triệu - 6 triệu</p>
+                                    <p>Trên 6 triệu</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>Màn hình độ họa</span>
+                                    <p>Màn hình Dell</p>
+                                    <p>Màn hình Asus</p>
+                                    <p>Màn hình Samsung</p>
+                                    <p>Màn hình 24 inch đồ họa</p>
+                                    <p>Màn hình 27 inch đồ họa</p>
+                                    <p>Màn hình 32 inch đồ họa</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>Tấm nền - Panel</span>
+                                    <p>Tấm nền TN</p>
+                                    <p>Tấm nên VA</p>
+                                    <p>Tấm nền IPS</p>
+                                    <p>Tấm nền Superclear IPS</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Phụ kiện màn hình</span>
+                                    <p>Giá treo màn hình</p>
+                                    <p>Đèn kẹp màn hình</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-plug"></i>Phụ kiện
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Dây cáp kết nối</span>
+                                    <p>Cáp HDMI</p>
+                                    <p>Cáp VGA</p>
+                                    <p>Cáp DVI</p>
+                                    <p>Cáp DisplayPort</p>
+                                    <p>Cáp mạng</p>
+                                    <p>Cáp nguồn</p>
+                                    <p>Màn hình HKC</p>
+                                    <p>Màn hình Acer</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Thiết bị chuyển đổi</span>
+                                    <p>Từ USB sang các loại</p>
+                                    <p>Từ HDMI sang các loại</p>
+                                    <p>Từ Type C sang cá loại</p>
+                                    <p>Từ DVI sang các loại</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Phụ kiện ổ cứng</span>
+                                    <p>Box ổ cứng</p>
+                                    <p>Caddy Bay - Tray SSD</p>
+                                    <p>Cáp ổ cứng</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Hub - Bộ chia</span>
+                                    <p>Bộ chia USB</p>
+                                    <p>Bộ chia VGA</p>
+                                    <p>Hub LED</p>
+                                </div>
+                            </div> 
+                            <div class="nd-itemduoi4">
+                                <div class="nd-item4">
+                                    <span>Balo</span>
+                                    <p>Balo Game</p>
+                                    <p>Balo Acer</p>
+                                    <p>Balo  Huawei</p>
+                                    <p>Balo Gigabyte</p>
+                                    <p>Balo MSI</p>
+                                    <p>Balo HP</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>Phụ kiện tai nghe</span>
+                                    <p>Giá treo tai nghe</p>
+                                    <p>Ốp tai nghe</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>Phụ kiện khác</span>
+                                    <p>ĐẾ tản nhiệt Laptop</p>
+                                    <p>Bộ vệ sinh</p>
+                                    <p>Giá treo màn hình</p>
+                                </div>
+                                <div class="nd-item4">
+                                </div>  
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-table"></i>Bàn, Ghế gaming
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Bàn Gaming</span>
+                                    <p>Bàn STAR</p>
+                                    <p>Bàn E-DRA</p>
+                                    <p>Bàn Warrior</p>
+                                    <p>Bàn PC chữ Z</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Ghế Gaming</span>
+                                    <p>Ghế E-DRA</p>
+                                    <p>Ghế Warrior</p>
+                                    <p>Ghế STAR</p>
+                                    <p>Ghế Centaur</p>
+                                    <p>Ghế AKRacing</p>
+                                    <p>Ghế Lightning</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Ghế công thái học</span>
+                                    <p>Ghế E-DRA</p>
+                                    <p>Ghế Warrior</p>
+                                    <p>Ghế Sihoo</p>
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-keyboard"></i>Phím, Chuột, Tai nghe
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Bàn Phím</span>
+                                    <p>Bàn phím cơ</p>
+                                    <p>Bàn phím giả cơ</p>
+                                    <p>Bàn phím văn phòng</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Chuột</span>
+                                    <p>Chuột gaming</p>
+                                    <p>Chuột văn phòng</p>
+                                    <p>Chuột không dây</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Tai nghe</span>
+                                    <p>Tai nghe gaming</p>
+                                    <p>Tai nghe không dây</p>
+                                    <p>Tai nghe phổ thông</p>
+                                    <p>Ốp tai nghe</p>
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-network-wired"></i>Thiết bị mạng
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Thiết bị mạng theo hãng</span>
+                                    <p>Thiết bị mạng Aptek</p>
+                                    <p>Thiết bị mạng Asus</p>
+                                    <p>Thiết bị mạng Aruba</p>
+                                    <p>Thiết bị mạng D-Link</p>
+                                    <p>Thiết bị mạng Draytek</p>
+                                    <p>Thiết bị mạng Ruije Reyee</p>
+                                    <p>Thiết bị mạng Tenda</p>
+                                    <p>Thiết bị mạng TP-Link</p>
+                                    <p>Thiết bị mạng TOTO-Link</p>
+                                    <p>Thiết bị mạng Hikvision</p>
+                                    <p>Thiết bị mạng UniFi</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Thiết bị cân bằng tải</span>
+                                    <p>Router Draytek</p>
+                                    <p>Router Ruije Reyee</p>
+                                    <p>Router Mikrotik</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Thiết bị chia mạng - Switch</span>
+                                    <p>Switch theo hãng</p>
+                                    <p>Switch theo cỗng kết nối</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Linh phụ kiện mạng</span>
+                                    <p>Bộ nguồn PoE</p>
+                                    <p>Dây cáp mạng</p>
+                                    <p>Đầu bấm mạng</p>
+                                    <p>Card mạng</p>
+                                </div>
+                            </div> 
+                            <div class="nd-itemduoi4">
+                                <div class="nd-item4">
+                                    <span>Thiết bị WiFi(Access Point)</span>
+                                    <p>Thiết bị WiFi theo hãng</p>
+                                    <p>Thiết bị WiFi theo nhu cầu</p>
+                                    <p>Thiết bị USB Wifi</p>
+                                </div>  
+                                <div class="nd-item4">
+                                    <span>Thiết bị lưu trữ mạng NA S</span>
+                                    <p>Thiết bị NAS Synology</p>
+                                </div>  
+                                <div class="nd-item4">
+                                </div>
+                                <div class="nd-item4">
+                                </div>  
+                            </div>
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-headphones"></i></i>Thiết bị âm thanh
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Loa Bluetooth</span>
+                                    <p>Loa Bluetooth Bosston</p>
+                                    <p>Loa Bluetooth Kisonli</p>
+                                    <p>Loa Bluetooth JBL</p>
+                                    <p>Loa Bluetooth Harman Kardon</p>
+                                    <p>Loa Bluetooth T&G</p>
+                                    <p>Loa Bluetooth Rimax</p>
+                                    <p>Loa Bluetooth Rock Space</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Loa máy tính</span>
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-window-restore"></i>Phần mềm
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Microsoft Window</span>
+                                    <p>Windows 10 Home</p>
+                                    <p>Windows 10 Pro</p>
+                                    <p>Windows 11 Pro</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Microsoft Office</span>
+                                    <p>Microsoft Office 365</p>
+                                    <p>Microsoft Office 2021</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Phần mềm diệt Virus</span>
+                                    <p>Phần mềm Kasspersky</p>
+                                    <p>Phần mềm BKAV</p>
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-camera-retro"></i>Camera, Thiết bị quan sát
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Camera theo hãng</span>
+                                    <p>Camera Dahua</p>
+                                    <p>Camera Hikvision</p>
+                                    <p>Camera HiLook</p>
+                                    <p>Camera EZVIZ</p>
+                                    <p>Camera IMOU</p>
+                                    <p>Camera IP không dây</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Đầu thu camera</span>
+                                    <p>Đầu thu camera Dahua</p>
+                                    <p>Đầu thu camera KBVision</p>
+                                    <p>Đầu thu HiLook</p>
+                                    <p>Đầu thu Vantech</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Webcam</span>
+                                    <p>Webcam Asus</p>
+                                    <p>Webcam Dahua</p>
+                                    <p>Webcam Logitech</p>
+                                    <p>Hikvision</p>
+                                    <p>Kisonli</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Camera hành trình</span>
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer; border-bottom: 1px solid rgb(235, 234, 234);" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-print"></i>Thiết bị văn phòng, Máy in
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Máy in theo hãng</span>
+                                    <p>Máy in HP</p>
+                                    <p>Máy in Canon</p>
+                                    <p>Máy in Brother</p>
+                                    <p>Máy in Epson</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Phụ kiện máy in</span>
+                                    <p>Cụm mực</p>
+                                    <p>Lọ mực đổ</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Máy chấm công</span>
+                                    <p>Máy chấm công Ronald Jack</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Bộ lưu điện UPS</span>
+                                    <p>Bộ lưu điện UPS Eaton</p>
+                                    <p>Bộ lưu điện UPS Vertiv</p>
+                                    <p>Bộ lưu điện UPS Santak</p>
+                                    <p>Bộ lưu điện UPS Cyber</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                    <li style="cursor: pointer;" class="pcgaming"><i style="margin-right: 10px;" class="fas fa-fan"></i>Tản nhiệt PC
+                        <div class="noidung-item-4">
+                            <div class="nd-itemtren4">
+                                <div class="nd-item4">
+                                    <span>Tản nhiệt theo hãng</span>
+                                    <p>Tản nhiệt Corsair</p>
+                                    <p>Tản nhiệt Cooler Master</p>
+                                    <p>Tản nhiệt Dark Flash</p>
+                                    <p>Tản nhiệt Asus</p>
+                                    <p>Tản nhiệt Deepcool</p>
+                                    <p>Tản nhiệt ID-Cooling</p>
+                                    <p>Tản nhiệt NZXT</p>
+                                    <p>Tản nhiệt VSP</p>
+                                    <p>Tản nhiệt Noctua</p>
+                                    <p>Tản nhiệt Aigo</p>
+                                </div>
+                                <div class="nd-item4">
+                                    <span>Loại tản nhiệt</span>
+                                    <p>Tản nhiệt khí</p>
+                                    <p>Tản nhiệt AiO</p>
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                                <div class="nd-item4">
+                                </div>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="noidungphai" class="col-12 col-md-8 col-lg-10">
+                <nav>
+                    <ul>
+                        <li><i style="margin-right: 10px;" class="fas fa-wrench"></i>Lắp đặt phòng net</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-wallet"></i>Trả góp</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-hand-holding-usd"></i>Bảng giá</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-stream"></i>Xây dựng cấu hình</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-shield-alt"></i>Kiểm tra bảo hành</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-dollar-sign"></i>Thiết bị mining</li>
+                    </ul>
+                </nav>
+                <div class="noidungchinh">
+                    <div class="noidungchinh1">
+                        <img src="./noidungchinh.jpg" alt="">
+                    </div>
+                    <div class="noidungchinh2">
+                        <div class="noidungchinh2-1">
+                            <img src="./nd1.jpg" alt="">
+                        </div>
+                        <div class="noidungchinh2-2">
+                            <img src="./ns2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="noidungphu">
+                    <img src="./nd3.jpg" alt="">
+                    <img src="./nd4.jpg" alt="">
+                    <img src="./nd5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="ndp">
+            <img src="./ndp1.jpg" alt="">
+            <img src="./ndp2.jpg" alt="">
+            <img src="./ndp3.jpg" alt="">
+            <img src="./ndp4.jpg" alt="">
+        </div>
+        <menu>
+            <div class="view">
+                <div class="boxed"><p>TOP BÁN CHẠY TRONG TUẦN</p></div>
+                <div class="boxedleft">                   
+                </div>
+            </div>
+        </menu>
+    </div>
+</body>
+</html>
