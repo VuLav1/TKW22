@@ -19,30 +19,29 @@
 </head>
 
 <body>
-    <div style="background: url(./hinhanh_labs/imagetravel/48.jpg);background-repeat: no-repeat;background-size: 100% 600px;height: 630px;">
+    <div
+        style="background: url(./hinhanh_labs/imagetravel/48.jpg);background-repeat: no-repeat;background-size: 100% 600px;height: 630px;">
         <nav style="overflow: hidden;position: fixed;width: 100%;" class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a style="color: white;" class="navbar-brand me-3 ms-5" href="#">MV Travels</a>               
+                <a style="color: white;" class="navbar-brand me-3 ms-5" href="#">MV Travels</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item me-3">
                             <a style="color: white;" class="nav-link active" aria-current="page" href="#">Trang chủ</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a style="color: white;" class="nav-link active" aria-current="page"
-                                href="#">Tour trong nước</a>
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Tour trong
+                                nước</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a style="color: white;" class="nav-link active" aria-current="page"
-                                href="#">Tour nước ngoài</a>
-                        </li>               
-                        <li class="nav-item me-3">
-                            <a style="color: white;" class="nav-link active" aria-current="page"
-                                href="#">Dịch vụ</a>
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Tour nước
+                                ngoài</a>
                         </li>
                         <li class="nav-item me-3">
-                            <a style="color: white;" class="nav-link active" aria-current="page"
-                                href="#">Liên hệ</a>
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Dịch vụ</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a style="color: white;" class="nav-link active" aria-current="page" href="#">Liên hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -54,35 +53,79 @@
             </div>
         </nav>
         <p style="text-align: center;padding-top: 100px;font-weight: bold;font-size: 50px;color: white;">TRAVEL</p>
-        <p style="font-family: cursive;font-style: italic;font-size: 30px;color: white;text-align: center;padding-top: 50px;">Xách balo lên và du lịch cùng <br> bạn bè</p>
-        <p style="text-align: center;"><button type="button" class="btn btn-danger">Đăng nhập<i style="color: white;" class="fas fa-address-book ms-1"></i></button></p>
+        <p
+            style="font-family: cursive;font-style: italic;font-size: 30px;color: white;text-align: center;padding-top: 50px;">
+            Xách balo lên và du lịch cùng <br> bạn bè</p>
+        <button style="margin: auto;display: block;" class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Đăng nhập<i style="color: white;"
+                class="fas fa-address-book ms-1"></i></button>
+
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="container-lg">
+                <h3 class="offcanvas-title text-primary" id="offcanvasTopLabel">ĐĂNG NHẬP</h3>
+                <div class="row">
+                    <form class="row d-flex">
+                        <div class="col-md-3 col-lg-3">
+                            <label for="inputPassword2" class="visually-hidden">Password</label>
+                            <input style="height: 60px;" type="password" class="form-control" id="inputPassword2"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <label for="inputPassword2" class="visually-hidden">Password</label>
+                            <input style="height: 60px;" type="password" class="form-control" id="inputPassword2"
+                                placeholder="Password">
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <button style="height: 60px;width: 300px;" type="submit" class="btn btn-primary mb-3">Sign
+                                in</button>
+                        </div>
+                        <div class="col-md-2 col-lg-2">
+                            <div class="form-check col-md-3 col-lg-3 ">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label style="width: 200px;" class="form-check-label" for="flexCheckDefault">
+                                    Default checkbox
+                                </label>
+                            </div>
+                            <a href="">Forgot password</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <p style="font-size: 30px;font-weight: bold;text-align: center;">Các Tính Năng Tốt Nhất</p><br>
-    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident <br>nulla 
-     repellat facere esse molestiae ipsa labore porro minima quam quaerat rem, natus <br>repudiandae debitis est sit pariatur.</p>
-     <div style="justify-content: space-around;" class="d-flex">
+    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic
+        provident <br>nulla
+        repellat facere esse molestiae ipsa labore porro minima quam quaerat rem, natus <br>repudiandae debitis est sit
+        pariatur.</p>
+    <div style="justify-content: space-around;" class="d-flex">
         <div style="text-align: center;">
             <i style="font-size: 50px;color: yellow;" class="fas fa-camera-retro"></i><br><br>
             <p style="font-size: 20px;font-weight: bold;">Kinh Nghiệm</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla 
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla
                 repellat facere esse molestiae ipsa labore</p>
         </div>
         <div style="text-align: center;">
             <i style="font-size: 50px;color: yellow;" class="fas fa-heart"></i><br><br>
             <p style="font-size: 20px;font-weight: bold;">Hạnh phúc</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla 
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla
                 repellat facere esse molestiae ipsa labore</p>
         </div>
         <div style="text-align: center;">
             <i style="font-size: 50px;color: yellow;" class="fas fa-bicycle"></i><br><br>
             <p style="font-size: 20px;font-weight: bold;">Phương tiện</p>
-            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla 
+            <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quasi voluptate hic provident <br>nulla
                 repellat facere esse molestiae ipsa labore</p>
         </div>
-     </div>
-     <div>
+    </div>
+    <div>
 
-     </div>
+    </div>
 </body>
 
 </html>
