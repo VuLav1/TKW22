@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,24 +16,70 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-<body>
-    <div class="container-lg">
-        <div style="margin: auto;" class="row">
-            <div class="col-6 col-md-3 col-lg-3">
-                <p>dsadmkasdkamsd</p>
-            </div>
-            <div class="col-6 col-md-3 col-lg-3">
-                <p>dsadmkasdkamsd</p>
-            </div>
-            <div class="col-6 col-md-3 col-lg-3">
-                <p>dsadmkasdkamsd</p>
-            </div>
-            <div class="col-6 col-md-2 col-lg-2">
-                <p>dsadmkasdkamsd</p>
-            </div>
-        </div>
 
+</head>
+
+<body>
+    <div>
+        <div class="row fixed-top"
+            style="border-bottom-left-radius: 120px;background-color: white; border-bottom-right-radius: 120px;">
+            <div class="col-md-6 col-lg-6">
+                <img style="width: 20%;margin: 30px 150px;" src="./hinhanh_labs/imagelab6/logo.png" alt="">
+            </div>
+            <nav class="navbar navbar-expand-lg col-md-6 col-lg-6">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./hinhanh_labs/imagelab6/slider-01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./hinhanh_labs/imagelab6/slider-02.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./hinhanh_labs/imagelab6/slider-03.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button style="text-align: left;" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <i style="font-size: 80px;color: orange;" class="bi bi-caret-left-square-fill"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <i style="font-size: 80px;color: orange;" class="bi bi-caret-right-square-fill"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 </body>
+
 </html>
